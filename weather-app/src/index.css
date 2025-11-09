@@ -6,16 +6,43 @@ body {
   margin: 0;
   font-family:Inter, sans-serif;
   background-color: #FAFAF8;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
     display: flex;
+    align-items: center;
     gap: 11px;
-    height: 80 px;
+    height: 80px; 
     background-color: white;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+    padding: 0 1rem; 
 }
-button {
-  display: flex;
+header form {
+  margin-left:auto;
 }
 
+body.dark {
+  background-color: #1E1E1E;
+  color: white;
+}
+
+body.light {
+  background-color: #FAFAF8;
+  color: black;
+}
+
+body.dark header {
+    background-color: #2C2C2C;
+    color: white;
+}
+
+body.light header {
+    background-color: white;
+    color: black;
+}
+
+/*Theme Toggler Button Styles*/
+themeContext.button{
+  background-color: black;
+}
