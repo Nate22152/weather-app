@@ -42,7 +42,22 @@ body.light header {
     color: black;
 }
 
-/*Theme Toggler Button Styles*/
-themeContext.button{
+.theme-toggle-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
   background-color: black;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .theme-toggle-btn {
+  background-color: white;
+  color: black;
+}
+
+body.light .theme-toggle-btn {
+  background-color: black;
+  color: white;
 }

@@ -12,7 +12,7 @@ export default function Theme() {
     }, [theme]); 
     return (
         <div>
-            <button onClick={toggleTheme}>{theme === "light" ? "Dark Mode" : "Light Mode"}
+            <button className="theme-toggle-btn" onClick={toggleTheme}>{theme === "light" ? "Dark Mode" : "Light Mode"}
             </button>
         </div>
     );
