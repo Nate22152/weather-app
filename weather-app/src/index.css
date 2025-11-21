@@ -18,9 +18,7 @@ header {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
     padding: 0 1rem; 
 }
-header form {
-  margin-left:auto;
-}
+
 
 body.dark {
   background-color: #1E1E1E;
@@ -50,6 +48,7 @@ body.light header {
   background-color: black;
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: auto;
 }
 
 body.dark .theme-toggle-btn {
@@ -60,4 +59,79 @@ body.dark .theme-toggle-btn {
 body.light .theme-toggle-btn {
   background-color: black;
   color: white;
+}
+
+
+.weather-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #f9f9f900;
+  text-align: center;
+}
+
+.weather-container h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#locationInput {
+  flex-grow: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchButton {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
+.weather-info {
+  margin-top: 1rem;
+}
+
+#location {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+#temperature {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+#description {
+  font-size: 1.2rem;
+  color: #777;
+  text-transform: capitalize;
+}
+
+.error-message {
+  color: #d9534f; /* Red color for errors */
+  font-weight: bold;
 }
