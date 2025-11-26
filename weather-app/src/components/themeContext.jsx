@@ -11,7 +11,7 @@ export default function Theme() {
         document.body.className = theme;
     }, [theme]); 
     return (
-        <div>
+        <div className = "button-header">
             <button className="theme-toggle-btn" onClick={toggleTheme}>{theme === "light" ? "Dark Mode" : "Light Mode"}
             </button>
         </div>

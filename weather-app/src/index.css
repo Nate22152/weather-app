@@ -48,7 +48,6 @@ body.light header {
   background-color: black;
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin-left: auto;
 }
 
 body.dark .theme-toggle-btn {
@@ -132,6 +131,10 @@ body.light .theme-toggle-btn {
 }
 
 .error-message {
-  color: #d9534f; /* Red color for errors */
+  color: #d9534f; 
   font-weight: bold;
+}
+
+.button-header{
+  margin-left:auto;
 }
