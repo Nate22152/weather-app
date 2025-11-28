@@ -73,9 +73,14 @@ body.light .theme-toggle-btn {
   text-align: center;
 }
 
-.weather-container h2 {
+body.dark .weather-container h2{
   margin-top: 0;
-  color: #333;
+  border-color: #444;
+}
+
+body.light .weather-container h2{
+  margin-top: 0;
+  border-color: #ddd;
 }
 
 .search-bar {
@@ -137,4 +142,51 @@ body.light .theme-toggle-btn {
 
 .button-header{
   margin-left:auto;
+}
+.forecast-grid {
+  display: flex;       /* Aligns items in a row */
+  gap: 10px;           /* Space between cards */
+  flex-wrap: wrap;     /* Wraps to next line on small screens */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.forecast-card {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80px;         /* Fixed width for uniform look */
+}
+
+.date {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.temp {
+  font-size: 18px;
+  color: #61dafb;
+}
+
+.desc {
+  font-size: 12px;
+  color: #ddd;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;      
+  border-top: 5px solid #3498db;  
+  border-radius: 50%;            
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;             
+  animation: spin 1s linear infinite; 
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
