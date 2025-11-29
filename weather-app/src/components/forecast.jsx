@@ -1,8 +1,9 @@
 
-export default function Forecast({ data= {} }) {
+export default function Forecast({ data= {}, unit}) {
     if (!Array.isArray(data) || data.length === 0) {
     return null; 
-  }
+    }
+  console.log(data);
   return (
         <div className="forecast-container">
           <h3>5-Day Forecast</h3>
@@ -19,9 +20,11 @@ export default function Forecast({ data= {} }) {
                   alt="weather icon"
                 />
                 
-                <p className="temp">{Math.round(day.main.temp)}°F</p>
+                <p className="temp">{Math.round(day.main.temp)}°{unit}</p>
                 
                 <p className="desc">{day.weather[0].main}</p>
+                <p className="desc">High: {Math.round(day.main.temp_max)}°{unit}</p>
+                <p className="desc">Low: {Math.round(day.main.temp_min)}°{unit}</p>
               </div>
             ))}
           </div>

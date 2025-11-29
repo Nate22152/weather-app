@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import './App.css'
 import Header from './header'
-import Weather from './components/weather'
+import Weather from './components/dataMan.jsx'
 export default function App() {
   return (
     <>
